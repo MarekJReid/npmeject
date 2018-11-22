@@ -1,0 +1,70 @@
+/////// -------------------- NOTES -------------------- \\\\\\\\\\
+
+import React, {Component} from 'react'
+
+// const getYear = () => {
+//     const newDate = new Date();
+//                 return newDate.getFullYear();
+// }
+
+// Objects 
+// const user = {
+//     name: 'poodle',
+//         age: '15',
+//         color: 'brown'
+// }
+
+// js5 world:
+// var header = {
+//     render:function(){
+//         return ''
+//     }
+// }
+// object | Name| make it go places | Connect with react to have application scope
+class Header extends Component {
+    render (){
+        const styles = {
+            header: { <---- SETTING INLINE STYLES
+                background: '#03a9f4'
+            },
+            logo: {
+                color: '#fff',
+                fontFamily: 'Great Vibes',
+                textAlign: 'center',
+                fontSize: '5rem'
+            }
+        }
+    return (
+        <header style={styles.header}>
+            <div style={styles.logo}>Logo</div>  <---- ADDING INLINE STYLES
+            <input type="text"/>
+        </header>
+            )
+    }
+}
+
+export default Header
+
+<div 
+            className="logo"
+            onClick={this.inputChangeHandler}
+            >Logo</div> -> set different 
+
+    IF WE DO THIS AND CREATE INDIVIDUAL HANDLERS FOR EVERY ONCLICK WE CAN TOTALLY MAKE THE 
+    NAVBAR WORK WHOOOOO!
+
+
+    class Header extends Component {
+    inputChangeHandler(e) {
+        console.log(e.target.value) -> this outputs the 'value' or the item that was inputted into the input field
+        synthetic events!
+    }
+    render (){
+    return (
+        <header>
+            <div className="logo">Logo</div>
+            <input type="text" onChange={this.inputChangeHandler} /> -> sends information from the input field (ie change to the inpuchChagneHandler)
+        </header>
+            )
+    }
+}

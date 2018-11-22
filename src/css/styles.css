@@ -1,0 +1,27 @@
+body {
+    margin: auto 0;
+    
+}
+
+header {
+    background: peachpuff;
+    text-align: center;
+}
+
+.logo {
+    color: #fff;
+    font-family: 'Great Vibes';
+    font-size: 5rem;
+    padding: 2rem 0;
+}
+
+header input { 
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: steelblue;
+}
+
+.news_item {
+    background: blue;
+}
+  
